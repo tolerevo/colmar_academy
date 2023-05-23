@@ -5,8 +5,10 @@ body {
   font-family: "Helvetica", sans-serif;
   stroke-dasharray: none;
   color: black;
-  background-color: white;
+  background-color: blanchedalmond;
   font-size: 16px;
+  width: 1110px;
+  height: 1000px;
 }
 
 a {
@@ -14,41 +16,77 @@ a {
 }
 
 .flex-container {
+  position:fixed;
   display: flex;
-  justify-content: center;
+  justify-content:stretch;
   flex-wrap: wrap;
+  background-color: white;
+  width:1110px;
 }
 
+ main,
+ div {
+position: absolute;
+}
 /* Header section*/
+#maintitle{
+display:block;
+}
 
-header {
-  width: 100%;
+header{  flex-flow:row wrap;
+  position: fixed;
+  background-color: white;
+  height:  69px;
+
+}
+header .flex-container{
   position: fixed;
   z-index: 1;
   height: 69px;
+  max-width: 100px;
   background-color: white;
-  border-bottom: 1px solid seashell;
+  border-bottom: 1em solid black;
   align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 16px thick black;
 }
 
 header img {
   height: 50px;
-  padding-left: 10px;
+  left: 10px;
 }
 
 nav {
   text-align: right;
   flex-grow: 1;
+  border-top: 20 thin black;
 }
 
-nav span {
-  display: inline-block;
+header nav span {
+  flex: 1 2 50%;
   padding: 20px 10px;
+  align-items: stretch;
+ 
 }
 
 /* Main section*/
-#jumbotron, .flex-container{
-  display: flex;
+#jumbotron.flex-container{
+  background-size: contain;
+  position: relative;
   background-image: url(../images/banner.jpg);
+  background-size:cover;
+  width: 60%;
+  width: 660px;
+  height: 816px;
+}e
+
+.button {
+  position:relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color:gray;
+  color:white;
+  font-size: 18px;
+  max-width: 800px;
+  
 }
-as
