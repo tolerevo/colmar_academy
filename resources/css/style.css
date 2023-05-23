@@ -5,10 +5,11 @@ html {
 
 body {
     margin: 0;
-    background-color: white;
+    background-color: rgb(208, 76, 76);
     font-family: Helvetica Arial sans-serif;
     font-size: 16px;
     background-origin: border-box;
+    background-image: url(/resources/assets/images/banner.jpg)
 }
 
 a,
@@ -79,6 +80,3 @@ ul li{
     opacity: 1;}
 
 /* .  */
-.banner{
-        background-image:url(colmar_academy/resources/assets/images/banner.jpg);
-} 
