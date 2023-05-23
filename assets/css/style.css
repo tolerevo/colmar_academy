@@ -1,0 +1,54 @@
+/* Universal Styles */
+
+body {
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+  stroke-dasharray: none;
+  color: black;
+  background-color: white;
+  font-size: 16px;
+}
+
+a {
+  color: black;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Header section*/
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 69px;
+  background-color: white;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+}
+
+header img {
+  height: 50px;
+  padding-left: 10px;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+/* Main section*/
+#jumbotron, .flex-container{
+  display: flex;
+  background-image: url(../images/banner.jpg);
+}
+as
