@@ -2,15 +2,14 @@
 html {
     font-size: 16px;
 }
-
 body {
     margin: 0;
     background-color: rgb(208, 76, 76);
     font-family: Helvetica Arial sans-serif;
     font-size: 16px;
     background-origin: border-box;
-    background-image: url(/resources/assets/images/banner.jpg)
-}
+    background-image: url(images/banner.jpg);
+    }
 
 a,
 ul,
@@ -66,8 +65,7 @@ img.logo {
     padding-left: 16px;
     padding-right: 16px;
 }
-
-#topmenu 
+ 
 ul li{
     flex-flow: wrap-reverse;
     font-family: Helvetica Arial sans-serif;
