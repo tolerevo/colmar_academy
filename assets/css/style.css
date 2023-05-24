@@ -36,13 +36,11 @@ a {
 
 
 header.flex-container{
-  display:flex;
+  display: flex;
+  width: 100%;
   position: fixed;
-  z-index: 3;
-  height: 69px;
-  width: 1500px;
   background-color: white;
-  border-bottom: 1px thin black;
+  z-index: 1;
   text-align:right;
   flex-wrap: wrap;
   flex-basis:content;
@@ -50,13 +48,8 @@ header.flex-container{
 
 }
 
-header.flex-container, p {
-
-  flex: 2 1 ;
-  padding-left: 16px;
-  flex-basis: 1189px;
-  padding-right: 16px;
-  justify-items: stretch ;
+header.flex-container p {
+  font-size: 20px bolder;
   text-align: center;
 }
 
@@ -86,42 +79,52 @@ flex-flow:row}
 
 /* Main section*/
 
-#jumbotron{display:flex;
-}
+#jumbotron, h2{
+  justify-content: space-around;
+flex-flow: column wrap;
+justify-content: space-between;
+align-items:baseline;
+align-content: space-around;
+column-gap: 24px;}
 
-
-
-
-img {
-    flex:60%;
-    flex-wrap:wrap ;
-    background-position: left;
-    position: absolute;
-  background-size:contain;
+#jumbotron img{
+  flex-basis:60%;
+  align-self:flex-start;
+  position: relative;
   background-repeat: no-repeat;
   padding-top: top 70px;
+  background-size: contain;
 }
 
 
 #jumbotron p, #jumbotron div {
+  display:block;
   flex:1 2;
   float:inline-end;
   padding-top: 8px;
   padding:20px;
-  background-color:gray;
-  color: black;
-  font-size: 40px;
+  background-color:whitesmoke;
+  color:rgb(92, 87, 87);
+  font-size: 1.3em;
+  justify-self: flex-start;
+  text-align: center;
+
 }
 
 
- .main_bttn
- {font-family: 'Raleway', sans-serif;
-  flex:content;
+ #jumbotron a.main_bttn{
+  display:block;
+  align-content:center;
+  font-family: 'Raleway' sans-serif;
+  flex:auto;
   float:right;
   font-weight: 600;
   font-size: 16px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1px;
   padding-top: 8px;
   padding-bottom:8px;
   background-color: gray;
-  color: white;d}
+  color: white  ;
+  justify-self: center;
+}
+  
