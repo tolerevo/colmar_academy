@@ -87,14 +87,16 @@ flex-flow:row}
 /* Main section*/
 
 #jumbotron{display:flex;
-  z-index:1;
-  }
+}
 
-  img{
+
+
+
+img {
     flex:60%;
     flex-wrap:wrap ;
     background-position: left;
-    position: relative;
+    position: absolute;
   background-size:contain;
   background-repeat: no-repeat;
   padding-top: top 70px;
@@ -103,7 +105,7 @@ flex-flow:row}
 
 #jumbotron p, #jumbotron div {
   flex:1 2;
-  flex-direction: row;
+  float:inline-end;
   padding-top: 8px;
   padding:20px;
   background-color:gray;
@@ -112,4 +114,14 @@ flex-flow:row}
 }
 
 
- 
+ .main_bttn
+ {font-family: 'Raleway', sans-serif;
+  flex:content;
+  float:right;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  padding-top: 8px;
+  padding-bottom:8px;
+  background-color: gray;
+  color: white;d}
