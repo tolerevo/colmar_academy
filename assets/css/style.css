@@ -2,91 +2,114 @@
 
 body {
   margin: 0;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica" sans-serif;
   stroke-dasharray: none;
   color: black;
-  background-color: blanchedalmond;
+  background-color: #ffebcd;
   font-size: 16px;
-  width: 1110px;
-  height: 1000px;
+  width: 1200px;
+  height: 100%;
+  position:relative;
 }
 
 a {
   color: black;
+  text-decoration-line: none;
+  font-size: 20px;
+  font-weight:bold;
+  padding:16px;
+
 }
 
 .flex-container {
-  position:fixed;
-  display: flex;
+  display:inline-flex;
   justify-content:stretch;
   flex-wrap: wrap;
   background-color: white;
-  width:1110px;
+  width: 1110px;
 }
 
- main,
- div {
-position: absolute;
-}
+ 
+ 
+
 /* Header section*/
-#maintitle{
-display:block;
-}
 
-header{  flex-flow:row wrap;
-  position: fixed;
-  background-color: white;
-  height:  69px;
 
-}
-header .flex-container{
+header.flex-container{
+  display:flex;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   height: 69px;
-  max-width: 100px;
+  width: 1500px;
   background-color: white;
-  border-bottom: 1em solid black;
-  align-items: center;
-  padding-bottom: 16px;
-  border-bottom: 16px thick black;
+  border-bottom: 1px thin black;
+  text-align:right;
+  flex-wrap: wrap;
+  flex-basis:content;
+  flex-direction: row;
+
 }
 
-header img {
-  height: 50px;
-  left: 10px;
+header.flex-container, p {
+
+  flex: 2 1 ;
+  padding-left: 16px;
+  flex-basis: 1189px;
+  padding-right: 16px;
+  justify-items: stretch ;
+  text-align: center;
 }
 
-nav {
+header img{
+flex:none;
+position: relative;
+align-self: center;
+height: 100%;
+border-bottom: 10px;
+margin-bottom: 10px;
+}
+
+
+.flexcontainer nav{flex: auto;
+  align-items: stretch;
   text-align: right;
   flex-grow: 1;
   border-top: 20 thin black;
-}
+flex-flow:row}
 
-header nav span {
-  flex: 1 2 50%;
+ nav span {
+  flex:content;
   padding: 20px 10px;
-  align-items: stretch;
+  
  
 }
 
 /* Main section*/
-#jumbotron.flex-container{
-  background-size: contain;
-  position: relative;
-  background-image: url(../images/banner.jpg);
-  background-size:cover;
-  width: 60%;
-  width: 660px;
-  height: 816px;
-}e
 
-.button {
-  position:relative;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color:gray;
-  color:white;
-  font-size: 18px;
-  max-width: 800px;
-  
+#jumbotron{display:flex;
+  z-index:1;
+  }
+
+  img{
+    flex:60%;
+    flex-wrap:wrap ;
+    background-position: left;
+    position: relative;
+  background-size:contain;
+  background-repeat: no-repeat;
+  padding-top: top 70px;
 }
+
+
+#jumbotron p, #jumbotron div {
+  flex:1 2;
+  flex-direction: row;
+  padding-top: 8px;
+  padding:20px;
+  background-color:gray;
+  color: black;
+  font-size: 40px;
+}
+
+
+ 
