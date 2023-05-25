@@ -2,48 +2,48 @@
 
 body {
   margin: 0;
-  font-family: "Helvetica" sans-serif;
+  font-family: "Raleway" sans-serif;
   stroke-dasharray: none;
   color: black;
   background-color: #ffebcd;
   font-size: 16px;
   width: 1200px;
   height: 100%;
-  position:relative;
+  position: relative;
 }
 
 a {
   color: black;
   text-decoration-line: none;
   font-size: 20px;
-  font-weight:bold;
-  padding:16px;
+  font-weight: bold;
+  padding: 16px;
 
 }
 
 .flex-container {
-  display:inline-flex;
-  justify-content:stretch;
+  display: inline-flex;
+  justify-content: stretch;
   flex-wrap: wrap;
   background-color: white;
   width: 1110px;
 }
 
- 
- 
+
+
 
 /* Header section*/
 
 
-header.flex-container{
+header.flex-container {
   display: flex;
   width: 100%;
   position: fixed;
   background-color: white;
   z-index: 1;
-  text-align:right;
+  text-align: right;
   flex-wrap: wrap;
-  flex-basis:content;
+  flex-basis: content;
   flex-direction: row;
 
 }
@@ -53,43 +53,47 @@ header.flex-container p {
   text-align: center;
 }
 
-header img{
-flex:none;
-position: relative;
-align-self: center;
-height: 100%;
-border-bottom: 10px;
-margin-bottom: 10px;
+header img {
+  flex: none;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  border-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 
-.flexcontainer nav{flex: auto;
+.flexcontainer nav {
+  flex: auto;
   align-items: stretch;
   text-align: right;
   flex-grow: 1;
   border-top: 20 thin black;
-flex-flow:row}
-
- nav span {
-  flex:content;
-  padding: 20px 10px;
-  
- 
+  flex-flow: row
 }
 
-/* Main section*/
+nav span {
+  flex: content;
+  padding: 20px 10px;
 
-#jumbotron, h2{
+
+}
+
+/* Learn section*/
+
+#jumbotron,
+h2 {
   justify-content: space-around;
-flex-flow: column wrap;
-justify-content: space-between;
-align-items:baseline;
-align-content: space-around;
-column-gap: 24px;}
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: space-around;
+  column-gap: 24px;
+}
 
-#jumbotron img{
-  flex-basis:60%;
-  align-self:flex-start;
+#jumbotron img {
+  flex-basis: 60%;
+  align-self: flex-start;
   position: relative;
   background-repeat: no-repeat;
   padding-top: top 70px;
@@ -97,14 +101,15 @@ column-gap: 24px;}
 }
 
 
-#jumbotron p, #jumbotron div {
-  display:block;
-  flex:1 2;
-  float:inline-end;
+#jumbotron p,
+#jumbotron div {
+  display: block;
+  flex: 1 2;
+  float: inline-end;
   padding-top: 8px;
-  padding:20px;
-  background-color:whitesmoke;
-  color:rgb(92, 87, 87);
+  padding: 20px;
+  background-color: whitesmoke;
+  color: rgb(92, 87, 87);
   font-size: 1.3em;
   justify-self: flex-start;
   text-align: center;
@@ -112,19 +117,18 @@ column-gap: 24px;}
 }
 
 
- #jumbotron a.main_bttn{
-  display:block;
-  align-content:center;
+#jumbotron a.main_bttn {
+  display: block;
+  align-content: center;
   font-family: 'Raleway' sans-serif;
-  flex:auto;
-  float:right;
+  flex: auto;
+  float: right;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   padding-top: 8px;
-  padding-bottom:8px;
+  padding-bottom: 8px;
   background-color: gray;
-  color: white  ;
+  color: white;
   justify-self: center;
 }
-  
