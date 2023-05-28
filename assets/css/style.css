@@ -7,7 +7,6 @@ body {
   color: black;
   background-color: #ffebcd;
   font-size: 16px;
-  width: 1200px;
   height: 100%;
   position: relative;
 }
@@ -23,10 +22,10 @@ a {
 
 .flex-container {
   display: inline-flex;
-  justify-content: stretch;
+  justify-content:space-around;
   flex-wrap: wrap;
   background-color: white;
-  width: 1110px;
+  width: 1500px;
 }
 
 
@@ -36,52 +35,58 @@ a {
 
 
 header.flex-container {
-  display: flex;
-  width: 100%;
+  display:flex;
+  width: 100%;  
+  flex-wrap: wrap;
   position: fixed;
   background-color: white;
   z-index: 1;
-  text-align: right;
-  flex-wrap: wrap;
-  flex-basis: content;
-  flex-direction: row;
-
+  border: none;
+  height:2em;
 }
 
-header.flex-container p {
-  font-size: 20px bolder;
-  text-align: center;
-}
+header.flex-container .tittle{
+  flex: auto;
+  font-size: 400;
+  text-align:start;
+  line-height:1.8;
+  width: 200px;
+  margin-left:1em; 
+  padding-top: 0;
+  margin: 0 auto;}
 
 header img {
-  flex: none;
   position: relative;
-  align-self: center;
-  height: 100%;
-  border-bottom: 10px;
-  margin-bottom: 10px;
+  flex: none;
+  align-self:flex-start;
+  padding-left: 24px;
+  height: 80%;
+  width: 2em;  
 }
 
 
-.flexcontainer nav {
+.flex-container nav {
   flex: auto;
-  align-items: stretch;
-  text-align: right;
-  flex-grow: 1;
-  border-top: 20 thin black;
-  flex-flow: row
+  width: auto;
+  justify-content: end;
+  vertical-align: bottom;
+  border-top: none;
+  flex-flow: row;
 }
 
-nav span {
-  flex: content;
-  padding: 20px 10px;
-
-
+.flex-container nav span {
+  display: inline-flex;
+  flex: none;
+  justify-content: right;
+  line-height: 1.8;
+  text-align:end;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /* Learn section*/
 
-#jumbotron,
+#banner,
 h2 {
   justify-content: space-around;
   flex-flow: column wrap;
@@ -91,18 +96,24 @@ h2 {
   column-gap: 24px;
 }
 
-#jumbotron img {
+#banner img {
   flex-basis: 60%;
   align-self: flex-start;
   position: relative;
+  width: 1104px;
   background-repeat: no-repeat;
   padding-top: top 70px;
   background-size: contain;
+  margin-top: 2em;
 }
 
+#banner{
+width:1500px;
+background-color: hsla(0, 0%, 85%, 1);
 
-#jumbotron p,
-#jumbotron div {
+}
+#banner p,
+#banner div {
   display: block;
   flex: 1 2;
   float: inline-end;
@@ -113,12 +124,11 @@ h2 {
   font-size: 1.3em;
   justify-self: flex-start;
   text-align: center;
-
 }
 
 
-#jumbotron a.main_bttn {
-  display: block;
+#banner a.main_bttn {
+  display: flex;
   align-content: center;
   font-family: 'Raleway' sans-serif;
   flex: auto;
@@ -130,5 +140,5 @@ h2 {
   padding-bottom: 8px;
   background-color: gray;
   color: white;
-  justify-self: center;
+  justify-self: right;
 }
