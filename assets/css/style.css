@@ -1,20 +1,24 @@
 /* Universal Styles */
-
+@font-face {
+  font-family:"Helvetica" ;
+  src: url(../fonts/Free-Sans-2/Helvetica.ttf) format("truetype");
+}
 body {
   margin: 0;
-  font-family: "Raleway" sans-serif;
+  font-family: Helvetica sans-serif;
   stroke-dasharray: none;
-  color: black;
-  background-color: #ffebcd;
+  color: dimgrey;
+  background-color: ghostwhite;
   font-size: 16px;
   height: 100%;
-  position: relative;
+  background-origin: border-box;
+  position: absolute;
 }
 
 a {
   color: black;
   text-decoration-line: none;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: bold;
   padding: 16px;
 
@@ -22,38 +26,52 @@ a {
 
 .flex-container {
   display: inline-flex;
-  justify-content:space-around;
+  justify-content:center;
   flex-wrap: wrap;
   background-color: white;
-  width: 1500px;
+  max-width:100%
 }
 
+h2{
+  font-size: 32px;
+}
 
-
+p{
+  font: size 16px;
+}
 
 /* Header section*/
 
 
 header.flex-container {
   display:flex;
-  width: 100%;  
-  flex-wrap: wrap;
+  justify-content: start;
+  max-width: 100%;  
+  flex-wrap:nowrap;
+  flex-direction: row;
+  width: 100%;
   position: fixed;
-  background-color: white;
   z-index: 1;
   border: none;
-  height:2em;
 }
 
 header.flex-container .tittle{
-  flex: auto;
-  font-size: 400;
+  display:inline-flex;
+  flex-flow:row;
+  flex-wrap: nowrap;
+  flex-grow:0.3;
+  justify-content: flex-start;
+  font-size: 1.5em;
   text-align:start;
   line-height:1.8;
-  width: 200px;
-  margin-left:1em; 
-  padding-top: 0;
-  margin: 0 auto;}
+  max-width: 500px;
+  margin-left:1em; }
+
+
+  header .tittle span{
+    text-align:start;
+    align-self: flex-start;
+  }
 
 header img {
   position: relative;
@@ -65,80 +83,97 @@ header img {
 }
 
 
-.flex-container nav {
-  flex: auto;
-  width: auto;
-  justify-content: end;
+header nav {
+  display: inline-flex;
+  margin-left: 90px;
+  flex-flow: row;
+  width: 60%;
+  justify-content: flex-end;
+  align-items: center;
   vertical-align: bottom;
   border-top: none;
-  flex-flow: row;
+  flex-direction: row;
 }
 
-.flex-container nav span {
-  display: inline-flex;
-  flex: none;
-  justify-content: right;
-  line-height: 1.8;
+header nav span {
+  flex: 2 1 ;
+  line-height: 2.5;
   text-align:end;
   margin-left: 1em;
   margin-right: 1em;
+  
 }
 
 /* Learn section*/
+#banner{
+display: flex;
+margin-top: 2.6em;
+width:1600px;
+height:880px;
+flex-wrap: nowrap;
+align-items: stretch;
+background-color: hsla(0, 0%, 85%, 1);
+}
 
-#banner,
-h2 {
-  justify-content: space-around;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  align-content: space-around;
-  column-gap: 24px;
+#banner h2 {
+  display: flex;
+  width:90%;
+  justify-content: center;
+  font-size: 2em;
+  flex-flow: column;
+  text-align: center;  
+  align-items: flex-end;
+  align-content: center;
+  column-gap: 10px;
+  margin-top: 170px;
+  flex-wrap: wrap-reverse;
 }
 
 #banner img {
   flex-basis: 60%;
   align-self: flex-start;
   position: relative;
-  width: 1104px;
+  width: 60%;
+  height:816px;
   background-repeat: no-repeat;
-  padding-top: top 70px;
+  padding: 2em 1.5em;
   background-size: contain;
-  margin-top: 2em;
+  margin: 0px;
 }
 
-#banner{
-width:1500px;
-background-color: hsla(0, 0%, 85%, 1);
-
-}
-#banner p,
-#banner div {
-  display: block;
+#banner div p {
+  display: flex;
+  flex-direction: row-reverse;
   flex: 1 2;
-  float: inline-end;
-  padding-top: 8px;
-  padding: 20px;
-  background-color: whitesmoke;
+  justify-content: center;
+  width:90% ; 
+  padding-top: 20px;
+  background-color: hsla(0, 0%, 85%, 1);
   color: rgb(92, 87, 87);
-  font-size: 1.3em;
-  justify-self: flex-start;
   text-align: center;
 }
 
+#banner div{
+  flex-direction:column-reverse;
+  flex-basis: 40%;
+  width: 619px;
+  padding-top: 130px;
+}
 
-#banner a.main_bttn {
-  display: flex;
-  align-content: center;
-  font-family: 'Raleway' sans-serif;
-  flex: auto;
-  float: right;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
+div a.main_bttn {
+  display: inline-flex;
+  font-family: 'Helvetica' sans-serif;
+  justify-self: flex-end;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-right: 1em;
+  font-weight: 400;
+  width: 90%;
+  font-size:20px;
   padding-top: 8px;
   padding-bottom: 8px;
-  background-color: gray;
+  background-color: hsla(0, 0%, 29%, 1);
+  justify-content: center;
   color: white;
-  justify-self: right;
+  
 }
