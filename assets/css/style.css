@@ -11,7 +11,7 @@ body{
   font-family: Helvetica sans-serif;
   stroke-dasharray: none;
   color: dimgrey;
-  background-color: ghostwhite;
+  background-color: whitesmoke;
   font-size: 16px;
   height: 100%;
   background-origin: border-box;
@@ -31,7 +31,7 @@ a {
   display: inline-flex;
   justify-content:center;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: whitesmoke;
   max-width:100%
 }
 
@@ -176,7 +176,7 @@ div a.main_bttn {
   padding-bottom: 8px;
   background-color: hsla(0, 0%, 29%, 1);
   justify-content: center;
-  color: white;
+  color: whitesmoke;
   
 }
 
@@ -221,7 +221,7 @@ div a.main_bttn {
   padding-top: 16px;
   
   color:rgb(61, 61, 61);
-  border-left: white solid 1px;
+  border-left: whitesmoke solid 1px;
 }
 
 .information-right a {
@@ -263,9 +263,64 @@ div a.main_bttn {
   }
 
   /* Start learning inline block*/
-  /* Start learning*/
-  /* Software egineering*/
+.learning{
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-right: 72px;
+    padding-left: 72px;
+    padding-bottom: 32px;
+    background-color: hsla(0, 0%, 85%, 1);
+    max-width: 100%;
+  }
 
+
+
+  /* Start learning*/
+h3.Start{
+    position:static;
+    text-align: center;
+    width: 100%;
+    border-top: 10px solid hsla(0, 0%, 85%, 1);
+    padding: 2em 0;
+    align-self: center;
+    font-size: 35px;
+    color:hsla(0, 0%, 29%, 1);
+    font-weight:bolder;
+    font-stretch:100%;
+  }
+
+   
+
+ /* Software egineering*/
+  .learning .software,
+  .learning .design,   
+  .learning .computer-art,
+  .learning .data,
+  .learning .Business,
+ .learning .Marketing{
+   position: relative;
+   display:inline-block;
+    position: relative;
+    top: 1em;
+    right: 72px;
+    left: 72px;
+    bottom: 32px;
+    height:auto;
+    padding-right: 32px;
+    background-color: whitesmoke;
+     }
+   
+     .learning p,
+     h4{
+      padding-left:1em;
+      justify-content: center;
+      padding-bottom:24px;
+      color: hsla(0, 0%, 58%, 1);
+     }
+   
   /*Computer art*/
   /* Design */
   /* Data */
@@ -277,9 +332,9 @@ div a.main_bttn {
     /* Footer*/
     footer {
       position: relative;
-      display:block;
+      display:inline-block;
       font-size: 16px;
-      border: 1em white thin;
+      justify-content: space-between;
     }
   
      .flex-end {
