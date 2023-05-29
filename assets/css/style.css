@@ -1,9 +1,12 @@
 /* Universal Styles */
 @font-face {
   font-family:"Helvetica" ;
-  src: url(../fonts/Free-Sans-2/Helvetica.ttf) format("truetype");
+  src: url(/assets/fonts/Free-Sans-2/Helvetica.ttf) format("truetype");
 }
-body {
+*{
+background-origin: border-box;
+}
+body{
   margin: 0;
   font-family: Helvetica sans-serif;
   stroke-dasharray: none;
@@ -178,7 +181,7 @@ div a.main_bttn {
 }
 
 /* information Section*/
-#information .flex{
+.information .flex{
   width: 1600px;
   display: inline-flex;
   flex-wrap: nowrap;
@@ -187,7 +190,7 @@ div a.main_bttn {
   height:950px
 }
 
-#information .flex img{
+.information .flex img{
   flex-basis: 60%;
   align-self: flex-start;
   position: relative;
@@ -200,7 +203,7 @@ div a.main_bttn {
   background-color: white;
 }
 
-#information .flex h2{
+.information .flex h2{
   display: flex;
   width: 60%;
   justify-self: start;
@@ -217,7 +220,7 @@ div a.main_bttn {
   margin-left: 24px;
 }
 
-#information .flex p{
+.information p{
   flex: 1 2 60%;
   justify-content: flex-start;
   justify-self: flex-start;
@@ -233,12 +236,13 @@ div a.main_bttn {
 
 /* First Side-bar*/
 
-#side-bar {
-  position:sticky;
-  display: flex;
+.side-bar {
+  position:relative;
+  display: inline-block;
   flex-flow: column;
   float: right;
   width: 35%;
+  min-width:35%;
   flex-wrap: nowrap;
   background-color: white;
   margin: 0 auto;
@@ -246,33 +250,57 @@ div a.main_bttn {
   align-content: flex-start;
   justify-content: center;
   align-items: stretch;
-  flex-direction: column;;}
-
-  .informational, 
-  .campus,
-  .lectures{
-    display: inline-flex;
-    flex-basis: content;
-    flex-direction: row;
-    flex-wrap: wrap;
+  flex-direction: column;}
     
-  }
-    
-  #side-bar img{
+  #side-bar img.block{
+    position:relative;
     display: flex;
     flex-direction: row;
     width:35%;
-    height:100%;
+    height:auto%;
   }
   
-  #side-bar div{
+ #side-bar span{
     display: flex;
     flex-direction: column;
     width:65%;
     flex-flow: column;
-    height:fit-content;
+    margin-bottom: 0;
+    padding: 8px 0px;
   }
 
-  #side-bar p{
-    padding: 8px 0;
+  #side-bar a{
+    color:blue;
+    justify-self: flex-start;
+    margin-bottom: 0.5em;
+  }
+
+  /* Start learning inline block*/
+  /* Start learning*/
+  /* Software egineering*/
+
+  /*Computer art*/
+  /* Design */
+  /* Data */
+  /* Business*/
+  /* Marketing*/
+  /* Thesis exhibit*/
+  /* Side bar finale*/
+  /* Now and then*/
+  /* Footer*/
+  footer{
+    position:relative;
+    display:flex;
+    width: 1500px;
+    font-size: 16px;
+    justify-content: space-around;
+  }
+  footer p.flex-end{
+    justify-content: flex-end;
+    display:flex;
+    wrap:nowrap;
+    flex-direction:row;
+    flex-basis: 200px;
+    margin-left: 24px;
+    padding-right: 1px;
   }
