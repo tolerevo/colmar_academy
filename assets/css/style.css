@@ -1,7 +1,7 @@
 /* Universal Styles */
 @font-face {
   font-family:Helvetica ;
-  src: url(assets/fonts/Free-Sans-2/Helvetica.ttf) format(TrueType);
+  src: url(assets/fonts/Free-Sans-2/Helvetica.ttf-Sans-2/Helvetica.ttf) format(TrueType);
 }
 
 *︎ {
@@ -572,9 +572,3 @@ video {
       display: none;
   }
 }
-
-
-
-
-
-
