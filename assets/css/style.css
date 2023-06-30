@@ -312,6 +312,14 @@ div a.main_bttn {
 
 }
 
+.main_bttn:hover{
+  background-color: #c5854a;
+}
+
+.main_bttn:active{
+background-color:burlywood;
+color: rgb(47, 54, 52);
+}
 /* information Section*/
 .information {
   display: flex;
@@ -390,7 +398,7 @@ div a.main_bttn {
 }
 
 .info-sections p {
-  color: rgb(112, 111, 111);
+  color: rgb(108, 106, 106);
 }
 
 /* Start learning inline block*/
@@ -455,7 +463,7 @@ h3.Start {
   background-color:#d9d9d9;
   margin: 0;
   width: min-content;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #f5f5f5;
   text-overflow: scroll;
 
 }
@@ -469,7 +477,7 @@ h4 {
 
 }
 
-button#mobile-button {
+button.mobile-button {
   display: none;
 
 }
@@ -702,7 +710,7 @@ footer h5{
 
   }
 
-  #mobile-button {
+  .mobile-button {
     margin: 8px auto;
     padding: 24px 16px;
     background-color: rgb(233, 223, 132);
@@ -714,7 +722,7 @@ footer h5{
     text-align: left;
   }
 
-  #mobile-button:hover {
+  .mobile-button:hover {
     background-color: rgb(228, 215, 99);
   }
 
