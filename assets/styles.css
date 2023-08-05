@@ -219,6 +219,35 @@ div.title p i {
 #logo {
   width: max(100px, 18vw);
   background-color:whitesmoke;
+<<<<<<< HEAD
+  aspect-ratio: 20 / 4;
+  padding: 0.3rem;
+=======
+<<<<<<< HEAD
+  aspect-ratio: 25 / 4;
+  padding: 0.4rem;
+>>>>>>> 198803d (sudoimproved)
+}
+
+header nav {
+  width: 50%;
+  min-width: 500px;
+  height: 25px;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+<<<<<<< HEAD
+header li:hover{
+  background-color:rgba(199, 230, 224, 0.8);
+=======
+nav li a:hover{
+ background-color:rgba(199, 230, 224, 0.8);
+=======
   aspect-ratio: 20 / 4;
   padding: 0.3rem;
 }
@@ -237,6 +266,8 @@ header > nav > ul {
 
 header li:hover{
   background-color:rgba(199, 230, 224, 0.8);
+>>>>>>> 2ef9750 (sudoimproved)
+>>>>>>> 198803d (sudoimproved)
 }
 
 /* Learn section*/
