@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Colmar Academy a positioning project" />
   <link href="./assets/styles.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,27 +13,35 @@
   <title>Colmaracademy</title>
 </head>
 
+<!-- Body-->
+
 <body>
+
   <!-- Header-->
+
   <header class="flex-container">
-    <img src="./assets/images/ic-logo.svg" alt="logo">
+    <img src="./assets/images/ic-logo.svg" id="logo" alt="logo">
     <div class="title">
       <p><i>COLMAR</i>ACADEMY</p>
     </div>
     <nav>
-      <span><a href="#campus">On Campus</a></span>
-      <span><a href="#online">Online</a></span>
-      <span><a href="#companies">Companies</a></span>
-      <span><a href="#singnin">Sign in</a></span>
+      <ul>
+      <li><a href="#campus">On Campus</a></li>
+      <li><a href="#online">Online</a></li>
+      <li><a href="#companies">Companies</a></li>
+      <li><a href="#signin">Sign in</a></li>
+    </ul> 
     </nav>
   </header>
   <nav class="mobile">
-    <a href="#"><img src="assets/images/ic-logo.svg"></a>
-    <a href="#"><img src="assets/images/ic-on-campus.svg"></a>
-    <a href="#"><img src="assets/images/ic-online.svg"></a>
-    <a href="#"><img src="assets/images/ic-login.svg"></a>
+    <a href="#campus"><img src="assets/images/ic-logo.svg"></a>
+    <a href="#online"><img src="assets/images/ic-on-campus.svg"></a>
+    <a href="#companies"><img src="assets/images/ic-online.svg"></a>
+    <a href="#signin"><img src="assets/images/ic-login.svg"></a>
   </nav>
+
   <!-- Banner Section -->
+
   <div id="banner">
     <img src="assets/images/banner.jpg" alt="three students reading while eating on a wooden table " width="1104" height="816">
     <div>
@@ -103,22 +112,31 @@
   <!-- Start learning inline block-->
 
   <section class="learning">
+
     <!-- Start learning-->
-    <h3 class="Start">Start learning</h3><!-- Software engineering-->
+
+    <h3 class="Start">Start learning</h3>
+
+    <!-- Software engineering-->
+
     <div class="wrapper">
       <div class="software">
         <img class="learning" src="assets/images/course-software.jpg" alt="a mac computer with two displays lighted on">
         <h4>Software engineering</h4>
         <p>COURSES</p>Web Development,Mobile Development,Mobile development, iOT, APIs
       </div> 
+
       <!-- Computer art -->
+
       <div class="computer-art"><img class="learning" src="assets/images/course-computer-art.jpg" alt="a hand holdin a mobile phone">
         <h4>Computer art</h4>
         <p>COURSES</p>
         Imaging & Design, Web Design,
         Computer Animation
       </div>
+
       <!-- Design-->
+
       <div class="design"><img class="learning" src="assets/images/course-design.jpg" alt="a man watching a digital pro camera">
         <h4>Design</h4>
         <p>COURSES</p>
@@ -129,6 +147,7 @@
         <p>COURSES</p>
         Data Science, Big Data, SQL, Data Visualization
       </div>
+
       <!-- Business-->
 
       <div class="Business"><img class="learning" src="assets/images/course-business.jpg" alt="mutliple chess pieces">
@@ -137,7 +156,9 @@
         Product Development, Business
         Development, Startup
       </div>
+
       <!-- Marketing-->
+
       <div class="Marketing">
         <img class="learning" src=assets/images/course-marketing.jpg alt="a hand touching an i-watch">
         <h4>Marketing</h4>
@@ -148,24 +169,32 @@
     </div>
   </section>
   
+  <!-- Learning-mobile -->
+
   <nav class="learning-mobile">
     <h3 class="Start">Start learning</h3>
-    <span><a href="#">Software engineering</a></span>
-    <span><a href="#">Computer art</a></span>
-    <span><a href="#">Design</a></span>
-    <span><a href="#">Data</a></span>
-    <span><a href="#">Business</a></span>
-    <span><a href="#">Marketing</a></span>
-  </nav>
-   <hr>
+    <ul>
+      <li><a href="#">Software engineering</a></li>
+      <li><a href="#">Computer art</a></li>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Data</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Marketing</a></li>
+    </ul>
+  </nav><hr>
+
   <!--Thesis exhibit-->
+
   <div class="thesis">
     <div class="thesis-header">
       <h2>Thesis exhibit</h2>
     </div>
     <div class="thesis-container">
       <div class="thesis-left">
-        <video controls src="assets/videos/thesis.mp4"></video><!--Design and prototype-->
+        <video controls src="assets/videos/thesis.mp4"></video>
+
+        <!--Design and prototype-->
+        
         <h2>Reimagine urban</h2>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non
           accumsam urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat,
