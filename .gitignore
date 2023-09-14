@@ -37,4 +37,5 @@ ehthumbs.db
 Thumbs.db
 .DS_Store
 test.js
-.DS_Store
+.vscode
+

@@ -173,6 +173,10 @@ p {
   text-align: center;
 }
 
+hr {
+  border: 2px solid gainsboro;
+}
+
 /* Header section*/
 
 
@@ -209,7 +213,7 @@ div.title p i {
   text-align: center;
   align-self: center;
   font-weight: bold;
-  color: black;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 #logo {
@@ -337,6 +341,45 @@ header nav {
   }
 
   /* information Section*/
+
+  }
+
+  div#banner div button {
+    position: relative;
+    width: 25rem;
+    padding: 14px 0px;
+    margin-top: 30px;
+    border: 2px solid slategray;
+    margin-bottom: 10px;
+    background-color: hsla(3, 20%, 77%, 0.7);
+    cursor: pointer;
+    transition: all 1s ease-in 200ms;
+  }
+
+  div#banner div button:hover,
+  a.main_bttn:hover {
+    background-color: slategray;
+    color: blanchedalmond;
+    cursor: pointer;
+    width: 33rem;
+    padding: 16px 0px;
+    rotate: 5deg;
+    border-radius: 15px;
+    border: 4px dotted darkturquoise;
+  }
+
+  a.main_bttn {
+    color: hsla(0, 2%, 35%, 1);
+    font-family: 'Prompt', sans-serif, monospace;
+    font-size: 2.0em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 1s ease-in 200ms;
+  }
+
+  /* information Section*/
+
   .information {
     display: flex;
     width: 100%;
@@ -395,6 +438,7 @@ header nav {
     border-top: rgb(229, 226, 226) solid 1px;
     border-left: rgb(229, 226, 226) solid 1px;
     margin-top: 16px;
+
   }
 
   .info-sections:hover {
@@ -430,6 +474,44 @@ header nav {
   }
 
   /* Start learning inline block*/
+
+  }
+
+  .info-sections:hover {
+    background-color: rgba(199, 230, 224, 0.8);
+    cursor: pointer;
+  }
+
+  .img-container {
+    width: 35%;
+    margin-right: 24px;
+  }
+
+  .info-sections img {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .info-sections h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 510;
+    margin: 0;
+  }
+
+  .info-sections p {
+    color: rgb(112, 111, 111);
+    line-height: 1;
+    font-size: 1.3em;
+  }
+
+  .img-container .mobile img {
+    display: none;
+  }
+
+  /* Start learning inline block*/
+
+
   .learning {
     position: relative;
     display: flex;
@@ -444,8 +526,8 @@ header nav {
   }
 
 
-
   /* Start learning*/
+
   h3.Start {
     position: static;
     text-align: center;
@@ -459,6 +541,16 @@ header nav {
     font-stretch: 100%;
   }
 
+  .wrapper {
+    width: 1600px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #d9d9d9;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  /* learning section*/
 
   .wrapper {
     width: 1600px;
@@ -470,6 +562,8 @@ header nav {
   }
 
   /* learning section*/
+
+
   .learning .software,
   .learning .design,
   .learning .computer-art,
@@ -488,10 +582,7 @@ header nav {
     margin: 0;
     width: 30%;
     border: 1px solid #d9d9d9;
-    text-overflow: scroll;
-
-
-  }
+   
 
   .learning img {
     width: 100%;
@@ -654,6 +745,7 @@ header nav {
   }
 
   /* MEDIA QUERY*/
+
   @media only screen and (max-width: 800px) {
     body {
       margin: 0 auto;
@@ -804,6 +896,7 @@ header nav {
 
     }
 
+
     nav.learning-mobile span,
     nav.learning-mobile span a {
       display: block;
@@ -820,6 +913,7 @@ header nav {
 
     .learning-mobile a:hover,
     .learning-mobile span:hover {
+
       background-color: rgba(199, 230, 224, 0.8);
     }
 
