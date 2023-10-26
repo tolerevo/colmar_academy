@@ -35,3 +35,12 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+.DS_Store
+test.js
+<<<<<<< HEAD
+.DS_Store
+.assets/indexcodecademy.html
+assets/indexcodecademy.html
+=======
+.vscode
+>>>>>>> main
