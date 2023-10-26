@@ -177,6 +177,10 @@ hr {
   border: 2px solid gainsboro;
 }
 
+hr {
+  border: 2px solid gainsboro;
+}
+
 /* Header section*/
 
 
@@ -212,13 +216,13 @@ div.title p {
 div.title p i {
   text-align: center;
   align-self: center;
-  font-weight: bold;
+  font-weight:bold; 
   color: rgba(0, 0, 0, 0.9);
 }
 
 #logo {
   width: max(100px, 18vw);
-<<<<<<< HEAD:assets/stylescodecademy.css
+
   background-color:whitesmoke;
   aspect-ratio: 20 / 4;
   padding: 0.3rem;
@@ -643,7 +647,6 @@ footer h5{
 
 footer nav.terms{
   display: inline-flex;
-=======
   background-color: whitesmoke;
   aspect-ratio: 25 / 4;
   padding: 0.4rem;
@@ -653,7 +656,6 @@ header nav {
   display: flex;
   margin: 0 auto;
   margin-left: 90px;
->>>>>>> main:assets/styles.css
   flex-flow: row nowrap;
   width: 45%;
   justify-content: flex-end;
@@ -661,11 +663,18 @@ header nav {
   vertical-align: bottom;
   border-top: none;
 
+/* MEDIA QUERY*/
+
+@media only screen and (max-width: 800px) {
+  body {
+    margin: 0 auto;
+    max-width: 50em;
+    
   nav {
     width: 50%;
     max-width: 600px;
     height: 25px;
-  }
+    }
 
   nav>ul {
     display: flex;
@@ -807,6 +816,14 @@ header nav {
 
   /* First Side-bar*/
 
+  nav.learning-mobile li,
+  nav.learning-mobile li a { 
+    display: block;
+    margin: 4px auto;
+    padding: 12px 8px;
+    background-color: rgb(233, 223, 132);
+    width: 90%;
+    font-size: 24px;
 
   .information-right {
     width: 38%;
@@ -814,6 +831,21 @@ header nav {
     color: rgb(61, 61, 61);
     border-left: whitesmoke solid 1px;
   }
+
+ .learning-mobile a:hover,
+ .learning-mobile li:hover {
+    background-color: rgba(199, 230, 224, 0.8);
+ }
+
+ /* Thesis-section */
+ .thesis-left {
+    width: 100%;
+    padding: 0;
+  }
+  .thesis-header h2 {
+   font-size: 40px;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
 
   .information-right a {
     color: rgb(179, 103, 32);
