@@ -33,4 +33,17 @@
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+<<<<<<< HEAD
 Thumbs.db
+=======
+Thumbs.db
+.DS_Store
+test.js
+<<<<<<< HEAD
+.DS_Store
+.assets/indexcodecademy.html
+assets/indexcodecademy.html
+=======
+.vscode
+>>>>>>> main
+>>>>>>> origin/main1
