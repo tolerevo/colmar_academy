@@ -29,11 +29,13 @@
 # OS generated files #
 ######################
 .DS_Store
-.DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+<<<<<<< HEAD
+Thumbs.db
+=======
 Thumbs.db
 .DS_Store
 test.js
@@ -44,3 +46,4 @@ assets/indexcodecademy.html
 =======
 .vscode
 >>>>>>> main
+>>>>>>> origin/main1

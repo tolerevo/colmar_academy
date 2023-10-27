@@ -85,9 +85,12 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+<<<<<<< HEAD
+  content: normal
+=======
   content: normal;
+>>>>>>> origin/main1
 }
-
 article,
 aside,
 details,
@@ -99,63 +102,52 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+  display: block
 }
-
 body {
-  line-height: 1;
+  line-height: 1
 }
-
 ol,
 ul {
-  list-style: none;
+  list-style: none
 }
-
 blockquote,
 q {
-  quotes: none;
+  quotes: none
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: '';
-  content: none;
+  content: none
 }
-
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 0
 }
-
 /* Universal Styles */
-
 * {
-  background-origin: border-box;
+  background-origin: border-box
 }
-
 body {
   margin: 0;
-  font-family: 'Prompt', sans-serif, monospace;
+  font-family: 'Prompt',sans-serif,monospace;
   stroke-dasharray: none;
   color: dimgrey;
   background-color: whitesmoke;
   font-size: 16px;
   background-origin: border-box;
   position: absolute;
-  width: 1450px;
+  width: 1450px
 }
-
 a {
   color: rgba(0, 0, 0, 0.8);
   text-decoration-line: none;
   font-size: 20px;
   font-weight: bold;
-  padding: 16px;
-
+  padding: 16px
 }
-
 .flex-container {
   display: inline-flex;
   justify-content: center;
@@ -163,27 +155,25 @@ a {
   background-color: whitesmoke;
   max-width: 100%
 }
-
 h2 {
-  font-size: 32px;
+  font-size: 32px
 }
-
 p {
   font-size: 24px;
+<<<<<<< HEAD
+  text-align: center
+=======
   text-align: center;
 }
 
 hr {
   border: 2px solid gainsboro;
+>>>>>>> origin/main1
 }
-
 hr {
-  border: 2px solid gainsboro;
+  border: 2px solid gainsboro
 }
-
 /* Header section*/
-
-
 header.flex-container {
   display: flex;
   justify-content: space-between;
@@ -194,9 +184,8 @@ header.flex-container {
   width: 100%;
   position: fixed;
   z-index: 1;
-  border: none;
+  border: none
 }
-
 header.flex-container div.title {
   display: inline-flex;
   flex-flow: row;
@@ -205,45 +194,56 @@ header.flex-container div.title {
   justify-content: flex-start;
   text-align: start;
   max-width: 500px;
-  margin-left: 1em;
+  margin-left: 1em
 }
-
 div.title p {
   font-size: 1.5em;
+<<<<<<< HEAD
+  line-height: 1.9
+=======
   line-height: 1.9;
+>>>>>>> origin/main1
 }
-
 div.title p i {
   text-align: center;
   align-self: center;
-  font-weight:bold; 
-  color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9)
 }
-
 #logo {
   width: max(100px, 18vw);
+<<<<<<< HEAD
+  background-color: whitesmoke;
+  aspect-ratio: 20/4;
+  padding: 0.3rem
+}
+=======
 
   background-color:whitesmoke;
   aspect-ratio: 20 / 4;
   padding: 0.3rem;
 }
 
+>>>>>>> origin/main1
 header nav {
   width: 50%;
   min-width: 500px;
-  height: 25px;
+  height: 25px
 }
-
 header > nav > ul {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
+<<<<<<< HEAD
+header li:hover {
+  background-color: rgba(199, 230, 224, 0.8)
+=======
 
 header li:hover{
   background-color:rgba(199, 230, 224, 0.8);
+>>>>>>> origin/main1
 }
-
 /* Learn section*/
 #banner {
   display: flex;
@@ -252,9 +252,8 @@ header li:hover{
   width: 100%;
   flex-wrap: nowrap;
   align-items: stretch;
-  background-color: hsla(0, 0%, 85%, 1);
+  background-color: hsla(0, 0%, 85%, 1)
 }
-
 #banner h2 {
   display: flex;
   width: 90%;
@@ -264,10 +263,8 @@ header li:hover{
   text-align: center;
   flex-wrap: wrap-reverse;
   align-items: center;
-  padding: 8px 0px;
+  padding: 8px 0px
 }
-
-
 #banner img {
   flex-basis: 60%;
   align-self: center;
@@ -277,9 +274,8 @@ header li:hover{
   background-repeat: no-repeat;
   padding: 2em 1.5em;
   background-size: contain;
-  margin: 0px;
+  margin: 0px
 }
-
 #banner div p {
   display: flex;
   flex-direction: column;
@@ -290,18 +286,16 @@ header li:hover{
   max-height: 125px;
   background-color: hsla(0, 0%, 85%, 1);
   color: rgb(92, 87, 87);
-  text-align: center;
+  text-align: center
 }
-
-div#banner div{
+div#banner div {
   padding-top: 130px;
   justify-content: center;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 37%;
+  width: 37%
 }
-
 div#banner div button {
   position: relative;
   width: 25rem;
@@ -311,83 +305,68 @@ div#banner div button {
   margin-bottom: 10px;
   background-color: hsla(3, 20%, 77%, 0.7);
   cursor: pointer;
-  transition: all 1s ease-in 200ms;
+  transition: all 1s ease-in 200ms
 }
-
 div#banner div button:hover,
-a.main_bttn:hover{
+a.main_bttn:hover {
   background-color: slategray;
-  color:blanchedalmond;
+  color: blanchedalmond;
   cursor: pointer;
-  width:33rem;
+  width: 33rem;
   padding: 16px 0px;
   rotate: 5deg;
   border-radius: 15px;
-  border: 4px dotted darkturquoise;
+  border: 4px dotted darkturquoise
 }
-
-a.main_bttn{
-color: hsla(0, 2%, 35%, 1);
-font-family: 'Prompt', sans-serif, monospace;  
-font-size: 2.0em;
-font-weight: 500;
-letter-spacing: 1.5px;
-cursor: pointer;
-transition: all 1s ease-in 200ms;
+a.main_bttn {
+  color: hsla(0, 2%, 35%, 1);
+  font-family: 'Prompt',sans-serif,monospace;
+  font-size: 2.0em;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 1s ease-in 200ms
 }
-
 /* information Section*/
-
 .information {
   display: flex;
   width: 100%;
-  margin: 0;
+  margin: 0
 }
-
 .information-left {
   padding: 32px 24px 32px 24px;
   color: rgb(61, 61, 61);
   width: 62%;
-  justify-items: center;
+  justify-items: center
 }
-
 .information-left img {
-  width: 100%;
-
+  width: 100%
 }
-
 .information-left h2 {
   font-size: 40px;
   font-weight: bold;
-  text-align: center;
+  text-align: center
 }
-
 .quote {
   padding-bottom: 24px;
   font-size: 19px;
-  color: rgb(112, 111, 111);
+  color: rgb(112, 111, 111)
 }
-
 .information-left p {
   color: rgb(112, 111, 111);
-  line-height: 1.5;
+  line-height: 1.5
 }
-
 /* First Side-bar*/
-
-
 .information-right {
   width: 38%;
   padding-top: 16px;
   color: rgb(61, 61, 61);
-  border-left: whitesmoke solid 1px;
+  border-left: whitesmoke solid 1px
 }
-
 .information-right a {
   color: rgb(179, 103, 32);
-  text-align: center;
+  text-align: center
 }
-
 .info-sections {
   display: flex;
   justify-content: flex-start;
@@ -395,43 +374,35 @@ transition: all 1s ease-in 200ms;
   border-bottom: rgb(229, 226, 226) solid 1px;
   border-top: rgb(229, 226, 226) solid 1px;
   border-left: rgb(229, 226, 226) solid 1px;
-  margin-top: 16px;
+  margin-top: 16px
 }
-
 .info-sections:hover {
   background-color: rgba(199, 230, 224, 0.8);
-  cursor: pointer;
+  cursor: pointer
 }
-
 .img-container {
   width: 35%;
-  margin-right: 24px;
+  margin-right: 24px
 }
-
 .info-sections img {
   max-width: 100%;
-  padding: 16px;
+  padding: 16px
 }
-
 .info-sections h4 {
   text-align: center;
   font-size: 24px;
   font-weight: 510;
-  margin: 0;
+  margin: 0
 }
-
 .info-sections p {
   color: rgb(112, 111, 111);
   line-height: 1;
-  font-size: 1.3em;
+  font-size: 1.3em
 }
-
 .img-container .mobile img {
-  display: none;
+  display: none
 }
-
 /* Start learning inline block*/
-
 .learning {
   position: relative;
   display: flex;
@@ -442,13 +413,9 @@ transition: all 1s ease-in 200ms;
   padding-left: 72px;
   padding-bottom: 32px;
   background-color: #d9d9d9;
-  max-width: 100%;
+  max-width: 100%
 }
-
-
-
 /* Start learning*/
-
 h3.Start {
   position: static;
   text-align: center;
@@ -459,21 +426,17 @@ h3.Start {
   font-size: 35px;
   color: hsla(0, 0%, 29%, 1);
   font-weight: bolder;
-  font-stretch: 100%;
+  font-stretch: 100%
 }
-
-
 .wrapper {
   width: 1600px;
   display: inline-flex;
   flex-wrap: wrap;
-  background-color: #d9d9d9;   
+  background-color: #d9d9d9;
   justify-content: space-evenly;
-  align-items: stretch;
+  align-items: stretch
 }
-
 /* learning section*/
-
 .learning .software,
 .learning .design,
 .learning .computer-art,
@@ -482,8 +445,8 @@ h3.Start {
 .learning .Marketing {
   position: relative;
   display: block;
-  font-family: 'Prompt', sans-serif, monospace;
-  font-size:medium;
+  font-family: 'Prompt',sans-serif,monospace;
+  font-size: medium;
   font-weight: 300;
   line-height: 1;
   justify-items: normal;
@@ -492,57 +455,45 @@ h3.Start {
   margin: 0;
   width: 30%;
   border: 2px solid #d9d9d9;
-  text-overflow: scroll;
-  
-
+  text-overflow: scroll
 }
-
-.learning img{
-width:100%;
-padding: 0;
+.learning img {
+  width: 100%;
+  padding: 0
 }
-
 .learning p,
 h4 {
   padding: 0.4em;
   justify-content: center;
   padding-bottom: 24px;
   color: #949494;
-  text-align: center;
+  text-align: center
 }
-.learning h4{
+.learning h4 {
   font-weight: 700;
-  text-align: center;
+  text-align: center
 }
-
 .learning-mobile a,
 .learning-mobile span,
-.learning-mobile h3.Start{
-  display: none;
-
+.learning-mobile h3.Start {
+  display: none
 }
-
 /* Thesis exhibit*/
-
 .thesis {
   border-bottom: rgb(229, 226, 226) solid 1px;
   border-left: white solid 1px;
   border-right: white solid 1px;
   width: 100%;
-  height: auto;
-
+  height: auto
 }
-
 .thesis-container {
   position: relative;
   display: inline-flex;
   flex-flow: row;
   max-width: 85%;
   min-width: min-content;
-  justify-content: space-between;
-
+  justify-content: space-between
 }
-
 .thesis-header h2 {
   font-size: 40px;
   font-weight: bold;
@@ -551,52 +502,43 @@ h4 {
   padding-top: 1em;
   position: relative;
   width: 50;
-  line-height: 2;
+  line-height: 2
 }
-
 .thesis-left {
   display: flex;
   flex-direction: column;
   width: 60%;
-  padding: 0 24px 32px 24px;
+  padding: 0 24px 32px 24px
 }
-
 .thesis-left h2 {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
   color: rgb(61, 61, 61);
-  line-height: 2;
+  line-height: 2
 }
-
 .thesis-left p {
   font-size: 19px;
   color: rgb(112, 111, 111);
   line-height: 1.3;
-  text-align: justify;
+  text-align: justify
 }
-
 video {
-  max-width: 100%;
+  max-width: 100%
 }
-
 .thesis-right {
   display: block;
   flex-direction: column;
-  width: 40%;
+  width: 40%
 }
-
 .thesis-right img {
   max-width: 100%;
-  padding: 16px;
+  padding: 16px
 }
-
 #fisma,
 #new-york {
-  float: inline-end;
-
+  float: inline-end
 }
-
 .thesis-sections {
   display: flex;
   justify-content: flex-start;
@@ -604,30 +546,25 @@ video {
   border-bottom: rgb(229, 226, 226) solid 1px;
   border-top: rgb(229, 226, 226) solid 1px;
   border-left: rgb(229, 226, 226) solid 1px;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
-
 .thesis-sections h2 {
   line-height: 1.5;
   text-align: center;
   color: rgb(61, 61, 61);
   font-size: 24px;
   font-weight: 510;
-  padding-top: 1em;
+  padding-top: 1em
 }
-
 .thesis-sections p {
   color: rgb(112, 111, 111);
   line-height: 1.1;
-  padding: 8px 0px;
+  padding: 8px 0px
 }
-
 .thesis-sections:hover {
-  background-color: rgb(199, 230, 224);
+  background-color: rgb(199, 230, 224)
 }
-
 /* Footer*/
-
 footer {
   position: relative;
   flex-direction: row;
@@ -636,16 +573,14 @@ footer {
   justify-content: space-between;
   flex-flow: row wrap;
   align-items: center;
-  width: 100%;
-  
+  width: 100%
 }
-footer h5{
+footer h5 {
   text-align: left;
   font-style: oblique;
-  font-weight: 400;
+  font-weight: 400
 }
-
-footer nav.terms{
+footer nav.terms {
   display: inline-flex;
   background-color: whitesmoke;
   aspect-ratio: 25 / 4;
@@ -661,13 +596,41 @@ header nav {
   justify-content: flex-end;
   align-items: center;
   vertical-align: bottom;
+<<<<<<< HEAD
+  border-top: none
+}
+=======
   border-top: none;
 
+>>>>>>> origin/main1
 /* MEDIA QUERY*/
-
 @media only screen and (max-width: 800px) {
   body {
     margin: 0 auto;
+<<<<<<< HEAD
+    max-width: 50em
+  }
+  header.flex-container {
+    display: none
+  }
+  nav.mobile {
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: hsla(0, 0%, 85%, 1);
+    transition: all 1.5s ease-in-out 400ms
+  }
+  div#banner {
+    display: block;
+    padding: none;
+    width: 100%
+  }
+  #banner img {
+    padding: 0;
+    width: 793px;
+    display: block
+=======
     max-width: 50em;
     
   nav {
@@ -732,18 +695,112 @@ header nav {
     background-color: hsla(0, 0%, 85%, 1);
     color: rgb(92, 87, 87);
     text-align: center;
+>>>>>>> origin/main1
   }
-
   div#banner div {
+<<<<<<< HEAD
+    flex-basis: -webkit-fit-content;
+    justify-content: end;
+    display: contents
+=======
     padding-top: 130px;
     justify-content: center;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     width: 37%;
+>>>>>>> origin/main1
   }
-
   div#banner div button {
+<<<<<<< HEAD
+    margin-left: 110px
+  }
+  /*INFORMATION*/
+  .information-left {
+    display: none
+  }
+  .information-right {
+    width: 100%
+  }
+  .info-sections {
+    display: block;
+    max-width: 100%;
+    border: none;
+    padding: 16px;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: rgb(229, 226, 226) solid 1px;
+    border-top: rgb(229, 226, 226) solid 1px;
+    border-left: rgb(229, 226, 226) solid 1px;
+    margin-top: 16px
+  }
+  .img-container {
+    width: 100%
+  }
+  .info-sections img.mobile {
+    width: 100%;
+    display: block
+  }
+  #orientation,
+  #campus,
+  #guest {
+    justify-content: center;
+    align-items: center;
+    align-self: center
+  }
+  .info-sections h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 510;
+    margin: 0
+  }
+  .info-sections:hover {
+    background-color: rgba(199, 230, 224, 0.7);
+    cursor: pointer
+  }
+  .info-sections img.desktop {
+    display: none
+  }
+  section.learning {
+    display: none
+  }
+  .information-right a {
+    color: rgb(179, 103, 32);
+    text-align: center;
+    display: block
+  }
+  /*START LEARNING*/
+  section.learning {
+    display: none
+  }
+  .course-container {
+    display: none
+  }
+  /*START LEARNING*/
+  section.learning {
+    display: none
+  }
+  .course-container {
+    display: none
+  }
+  nav.learning-mobile h3.Start {
+    display: block;
+    position: relative;
+    text-align: center;
+    border-top: none;
+    padding: 2em 0;
+    align-self: center;
+    font-size: 35px;
+    color: hsla(0, 0%, 29%, 1);
+    font-weight: bolder;
+    font-stretch: 100%
+  }
+  nav.learning-mobile {
+    display: block;
+    flex-direction: column;
+    padding: 32px
+  }
+=======
     position: relative;
     width: 25rem;
     padding: 14px 0px;
@@ -816,8 +873,9 @@ header nav {
 
   /* First Side-bar*/
 
+>>>>>>> origin/main1
   nav.learning-mobile li,
-  nav.learning-mobile li a { 
+  nav.learning-mobile li a {
     display: block;
     margin: 4px auto;
     padding: 12px 8px;
@@ -829,30 +887,152 @@ header nav {
     width: 38%;
     padding-top: 16px;
     color: rgb(61, 61, 61);
+<<<<<<< HEAD
+    border: none;
+    cursor: pointer;
+    text-align: left
+=======
     border-left: whitesmoke solid 1px;
+>>>>>>> origin/main1
   }
-
- .learning-mobile a:hover,
- .learning-mobile li:hover {
-    background-color: rgba(199, 230, 224, 0.8);
- }
-
- /* Thesis-section */
- .thesis-left {
+  .learning-mobile a:hover,
+  .learning-mobile li:hover {
+    background-color: rgba(199, 230, 224, 0.8)
+  }
+  /* Thesis-section */
+  .thesis-left {
     width: 100%;
-    padding: 0;
+    padding: 0
   }
   .thesis-header h2 {
-   font-size: 40px;
+    font-size: 40px;
     font-weight: bold;
     color: rgb(61, 61, 61);
+<<<<<<< HEAD
+    text-align: center;
+    padding-top: 1em;
+    position: relative;
+    width: 50;
+    line-height: 2
+  }
+  .thesis-left h2 {
+    display: none
+  }
+  .thesis-left p {
+    display: none
+  }
+  video {
+    width: 100%;
+    padding-left: 5rem
+  }
+  .thesis-right {
+    display: none
+  }
+  .thesis-right {
+    display: none
+  }
+  .thesis-right img {
+    display: none
+  }
+  #fisma,
+  #new-york {
+    display: none
+  }
+  .thesis-sections {
+    display: none
+  }
+  .thesis-sections h2 {
+    display: none
+  }
+  .thesis-sections p {
+    display: none
+  }
+  .thesis-sections:hover {
+    display: none
+  }
+  /*FOOTER*/
+  footer nav.terms {
+    display: none
+  }
+  footer h5 {
+    text-align: center;
+    font-style: oblique;
+    font-weight: 400;
+    padding: 16px 0px
+  }
+}
+/* MEDIA QUERY*/
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0 auto;
+    max-width: 50em
+  }
+  /*HEADER*/
+  header.flex-container {
+    display: none
+  }
+  nav.mobile {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    background-color: hsla(0, 0%, 85%, 1)
+  }
+  nav.mobile:hover {
+    transition: all 1.5s ease 400ms
+  }
+  nav.mobile a {
+    margin: auto
+  }
+  .header-right,
+  .header-left {
+    display: none
+  }
+  /*BANNER*/
+  div#banner {
+    display: block;
+    padding: none;
+    width: 100%
+  }
+  #banner img {
+    padding: 0;
+    width: 793px;
+    display: contents
+  }
+  div#banner div {
+    flex-basis: -webkit-fit-content;
+    justify-content: end;
+    display: contents
+  }
+  div#banner div button {
+    margin-left: 110px
+  }
+  /*INFORMATION*/
+  .information-left {
+    display: none
+  }
+  .information-right {
+    width: 100%
+  }
+  .information-right a {
+    color: rgb(179, 103, 32);
+    align-content: center;
+    display: block
+=======
 
   .information-right a {
     color: rgb(179, 103, 32);
     text-align: center;
+>>>>>>> origin/main1
   }
-
   .info-sections {
+<<<<<<< HEAD
+    display: block;
+    max-width: 100%;
+    border: none;
+    padding: 16px
+=======
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -860,9 +1040,46 @@ header nav {
     border-top: rgb(229, 226, 226) solid 1px;
     border-left: rgb(229, 226, 226) solid 1px;
     margin-top: 16px;
+>>>>>>> origin/main1
   }
-
   .info-sections:hover {
+<<<<<<< HEAD
+    background-color: rgb(199, 230, 224)
+  }
+  #orientation,
+  #campus,
+  #guest {
+    justify-content: center
+  }
+  .info-sections h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 510;
+    margin: 0
+  }
+  .info-sections img.mobile {
+    width: 100%;
+    display: block
+  }
+  .info-sections img.desktop {
+    display: none
+  }
+  /*START LEARNING*/
+  section.learning {
+    display: none
+  }
+  .course-container {
+    display: none
+  }
+  nav.learning-mobile {
+    display: block;
+    flex-direction: column;
+    padding: 32px
+  }
+  nav.learning-mobile h3.Start {
+    display: block;
+    position: relative;
+=======
     background-color: rgba(199, 230, 224, 0.8);
     cursor: pointer;
   }
@@ -878,6 +1095,7 @@ header nav {
   }
 
   .info-sections h4 {
+>>>>>>> origin/main1
     text-align: center;
     font-size: 24px;
     font-weight: 510;
@@ -923,8 +1141,29 @@ header nav {
     font-size: 35px;
     color: hsla(0, 0%, 29%, 1);
     font-weight: bolder;
-    font-stretch: 100%;
+    font-stretch: 100%
   }
+<<<<<<< HEAD
+  nav.learning-mobile span,
+  nav.learning-mobile span a {
+    display: block;
+    margin: 8px auto;
+    padding: 12px 8px;
+    background-color: rgb(233, 223, 132);
+    width: 90%;
+    font-size: 24px;
+    color: rgb(61, 61, 61);
+    border: none;
+    cursor: pointer;
+    text-align: left
+  }
+  .learning-mobile a:hover,
+  .learning-mobile span:hover {
+    background-color: rgba(199, 230, 224, 0.7)
+  }
+  /*THESIS*/
+  .thesis-left {
+=======
 
 
   .wrapper {
@@ -962,8 +1201,9 @@ header nav {
   }
 
   .learning img {
+>>>>>>> origin/main1
     width: 100%;
-    padding: 0;
+    padding: 0
   }
 
   .learning p,
@@ -1016,7 +1256,7 @@ header nav {
     padding-top: 1em;
     position: relative;
     width: 50;
-    line-height: 2;
+    line-height: 2
   }
 
   .thesis-left {
@@ -1027,25 +1267,65 @@ header nav {
   }
 
   .thesis-left h2 {
+<<<<<<< HEAD
+    display: none
+=======
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     color: rgb(61, 61, 61);
     line-height: 2;
+>>>>>>> origin/main1
   }
-
   .thesis-left p {
+<<<<<<< HEAD
+    display: none
+=======
     font-size: 19px;
     color: rgb(112, 111, 111);
     line-height: 1.3;
     text-align: justify;
+>>>>>>> origin/main1
   }
-
   video {
+<<<<<<< HEAD
+    width: 100%
+=======
     max-width: 100%;
+>>>>>>> origin/main1
   }
-
   .thesis-right {
+<<<<<<< HEAD
+    display: none
+  }
+  .thesis-right {
+    display: none
+  }
+  .thesis-right img {
+    display: none
+  }
+  #fisma,
+  #new-york {
+    display: none
+  }
+  .thesis-sections {
+    display: none
+  }
+  .thesis-sections h2 {
+    display: none
+  }
+  .thesis-sections p {
+    display: none
+  }
+  .thesis-sections:hover {
+    display: none
+  }
+  /*FOOTER*/
+  footer nav.terms {
+    display: none
+  }
+  footer h5 {
+=======
     display: block;
     flex-direction: column;
     width: 40%;
@@ -1074,6 +1354,7 @@ header nav {
 
   .thesis-sections h2 {
     line-height: 1.5;
+>>>>>>> origin/main1
     text-align: center;
     color: rgb(61, 61, 61);
     font-size: 24px;
@@ -1109,6 +1390,11 @@ header nav {
     text-align: left;
     font-style: oblique;
     font-weight: 400;
+<<<<<<< HEAD
+    padding: 16px 0px;
+    max-width: 480px
+  }
+=======
   }
 
   footer nav.terms {
@@ -1608,4 +1894,5 @@ header nav {
       max-width: 480px;
     }
   }
+>>>>>>> origin/main1
 }
